@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header';
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import './styles/custom.css';
+import './scripts/custom';
 import Counters from "./components/counters";
+import Button from 'antd/lib/button';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <Counters/>
-      </header>
     </div>
   );
 }

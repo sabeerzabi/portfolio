@@ -1,0 +1,161 @@
+
+/*
+	* Style settings of ShowMe
+	*
+	* (c) 2016 George Krupa, John Gera & Kreatura Media
+	*
+	* Plugin web:			https://kreaturamedia.com/
+	* Licenses: 			http://codecanyon.net/licenses/
+*/
+
+
+
+/* GLOBAL */
+
+	body *.km-showme,
+	* .km-relative > .km-showme,
+	*.km-showme {
+		visibility: hidden;
+		position: absolute;
+		font-size: initial;
+		line-height: normal;
+		text-align: left;
+		cursor: default;
+		-webkit-font-smoothing: antialiased;
+		overflow: visible !important;
+	}
+
+	.km-inner {
+		position: relative;
+	}
+
+	.km-relative {
+		position: relative !important;
+	}
+
+	.km-overflow-visible {
+		overflow: visible !important;
+	}
+
+	.km-overflow-hidden {
+		overflow: hidden !important;
+	}
+
+	.km-overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 100000;
+		left: 0px;
+		top: 0px;
+		visibility: hidden;
+		opacity: 0;
+		-ms-transform: translateZ(-10000px);
+		-moz-transform: translateZ(-10000px);
+		-webkit-transform: translateZ(-10000px);
+		transform: translateZ(-10000px);
+	}
+
+	.km-fixed {
+		position: fixed !important;
+		z-index: 200000;
+		left: 50%;
+		top: 50%;
+	}
+
+	.km-showme > .km-margin {
+		position: absolute;
+		z-index: -1;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background: transparent !important;
+	}
+
+	.km-showme > .km-arrow {
+		border: solid transparent;
+		height: 0;
+		width: 0;
+		display: block;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.km-showme-left > .km-arrow {
+		top: 50%;
+		left: 100%;
+	}
+
+	.km-showme-right > .km-arrow {
+		top: 50%;
+		right: 100%;
+	}
+
+	.km-showme-top > .km-arrow {
+		top: 100%;
+		left: 50%;
+	}
+
+	.km-showme-bottom > .km-arrow {
+		bottom: 100%;
+		left: 50%;
+	}
+
+/* SIZES */
+
+
+/* THEMES */
+
+	/* GLOBAL */
+
+	.km-showme {
+		border-radius: 7px;
+	}
+
+	/* DARK */
+
+	.km-showme-dark {
+		background: black;
+		color: white;
+	}
+
+	.km-showme-dark.km-showme-left > .km-arrow {
+		border-left-color: black;
+	}
+
+	.km-showme-dark.km-showme-right > .km-arrow {
+		border-right-color: black;
+	}
+
+	.km-showme-dark.km-showme-top > .km-arrow {
+		border-top-color: black;
+	}
+
+	.km-showme-dark.km-showme-bottom > .km-arrow {
+		border-bottom-color: black;
+	}
+
+	/* LIGHT */
+
+	.km-showme-light {
+		background: white;
+		color: black;
+	}
+
+	.km-showme-light.km-showme-left > .km-arrow {
+		border-left-color: white;
+	}
+
+	.km-showme-light.km-showme-right > .km-arrow {
+		border-right-color: white;
+	}
+
+	.km-showme-light.km-showme-top > .km-arrow {
+		border-top-color: white;
+	}
+
+	.km-showme-light.km-showme-bottom > .km-arrow {
+		border-bottom-color: white;
+	}
