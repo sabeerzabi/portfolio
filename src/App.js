@@ -8,7 +8,6 @@ import 'bootstrap/dist/js/bootstrap.js';
 import './styles/custom.css';
 import './scripts/custom';
 import Counters from "./components/counters";
-import Button from 'antd/lib/button';
 
 function App() {
   return (
